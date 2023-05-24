@@ -90,10 +90,21 @@ func guessNumber() {
 	println("Jawaban :", jawab)
 }
 
+func multipleArgs() {
+	fmt.Println("Input 3 angka :")
+	var angka1, angka2, angka3 int
+	n, err := fmt.Scan(&angka1, &angka2, &angka3) // n utk menampung inputan
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println("jawaban :", angka1, angka2, angka3, n)
+}
+
 func main() {
 	oddOrEven(8)
 	fizzBuzz(15)
 	randomNumber()
 	initialIf()
 	guessNumber()
+	multipleArgs()
 }
