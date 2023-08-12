@@ -90,7 +90,6 @@ func guessNumber() {
 	println("Jawaban :", jawab)
 }
 
-<<<<<<< HEAD
 func multipleArgs() {
 	fmt.Println("Input 3 angka :")
 	var angka1, angka2, angka3 int
@@ -99,7 +98,7 @@ func multipleArgs() {
 		log.Fatal(err)
 	}
 	fmt.Println("jawaban :", angka1, angka2, angka3, n)
-=======
+}
 func tebakHari(day int) {
 	switch n := day; {
 	case n == 0:
@@ -119,7 +118,7 @@ func tebakHari(day int) {
 	default:
 		fmt.Println("Hari Tidak Ditemukan")
 	}
->>>>>>> day01
+
 }
 
 func main() {
@@ -128,9 +127,6 @@ func main() {
 	randomNumber()
 	initialIf()
 	guessNumber()
-<<<<<<< HEAD
+	tebakHari(5)
 	multipleArgs()
-=======
-	tebakHari(6)
->>>>>>> day01
 }
